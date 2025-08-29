@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Contact Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+
+		label {
+			display: block;
+			/* প্রতিটা label আলাদা লাইনে থাকবে */
+			margin-top: 10px;
+			font-weight: bold;
+		}
+
+		input,
+		textarea {
+			width: 250px;
+			/* বক্সের প্রস্থ */
+			padding: 8px;
+			margin-top: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		button {
+			margin-top: 15px;
+			padding: 8px 20px;
+			background: green;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background: darkgreen;
+		}
+	</style>
+</head>
+
+<body>
+
+	<form>
+		<label for="name">Name</label>
+		<input type="text" id="name" placeholder="Enter your name">
+
+		<label for="email">Email</label>
+		<input type="email" id="email" placeholder="Enter your email">
+
+		<label for="message">Message</label>
+		<textarea id="message" rows="4" placeholder="Write your message"></textarea>
+
+		<button type="submit">Send</button>
+	</form>
+
+</body>
+
+</html>
